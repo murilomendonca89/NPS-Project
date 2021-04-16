@@ -25,7 +25,7 @@ class UserController {
 
         await userRepositiry.save(user)
 
-        return res.json(user)
+        return res.status(201).json(user)
     }
 }
 
